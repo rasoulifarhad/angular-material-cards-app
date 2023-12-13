@@ -1,0 +1,41 @@
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button'
+import { MatIconModule } from '@angular/material/icon'
+import { RouterModule, Routes }   from '@angular/router';
+import { MatGridListModule } from '@angular/material/grid-list'
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { MatCardModule } from '@angular/material/card';
+import { WebDevelopmentCardComponent } from './web-development-card/web-development-card.component';
+import { GridExampleCardComponent } from './grid-example-card/grid-example-card.component';
+
+
+@NgModule({
+    declarations: [
+        AppComponent,
+        WebDevelopmentCardComponent,
+        GridExampleCardComponent,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatButtonModule,
+        MatIconModule,
+        AppRoutingModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+        FormsModule,
+        MatCardModule,
+        RouterModule,
+        MatGridListModule
+
+
+    ]
+})
+export class AppModule { }
