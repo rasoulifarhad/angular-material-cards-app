@@ -12,13 +12,15 @@ import { AppComponent } from './app.component';
 import { MatCardModule } from '@angular/material/card';
 import { WebDevelopmentCardComponent } from './web-development-card/web-development-card.component';
 import { GridExampleCardComponent } from './grid-example-card/grid-example-card.component';
-
+import { MatListModule }  from '@angular/material/list';
+import { ListExampleCardComponent } from './list-example-card/list-example-card.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         WebDevelopmentCardComponent,
         GridExampleCardComponent,
+        ListExampleCardComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -33,7 +35,8 @@ import { GridExampleCardComponent } from './grid-example-card/grid-example-card.
         FormsModule,
         MatCardModule,
         RouterModule,
-        MatGridListModule
+        MatGridListModule,
+        MatListModule
 
 
     ]
